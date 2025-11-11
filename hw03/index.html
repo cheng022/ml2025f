@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次作業主要是利用先前訓練好的模型權重，完成心臟影像分割的推論。實作過程中需要整理資料夾結構、上傳到 Google Drive 並透過 Colab 執行，最後再將結果上傳至競賽網站。雖然流程繁瑣，但能更了解影像分割模型的實際應用，也學會如何處理權重與推論結果之間的關聯，讓我對整體訓練流程的了解更完整。
     </div>
   </div>
 
@@ -161,44 +161,61 @@
   <div class="row hw12">
     <div class="col-md-12 twenty">
       <table>
-        <tr>
+        <tbody><tr>
           <th>總分</th>
           <th>完成後打勾</th>
           <th>配分</th>
           <th>分項描述</th>
         </tr>
         <tr>
-          <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
-          <td id='m1'>4</td>
+          <td rowspan="4" id="myTotal">10</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked=""></td>
+          <td id="m1">4</td>
           <td>Simple baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
-          <td id='m2'>4</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked=""></td>
+          <td id="m2">4</td>
           <td>Medium baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
-          <td id='m3'>2</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked=""></td>
+          <td id="m3">2</td>
           <td>Strong baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
-          <td id='m4'>-10</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
+          <td id="m4">-10</td>
           <td>沒有寫100字心得</td>
         </tr>
 
-      </table>
+      </tbody></table>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <table>
+        <tbody><tr>
+          <td> Simple Baseline 圖片
+          <img src="simpleandMedium.png" width="100%" height="560">
+        </td></tr>
+        <tr>
+          <td> Medium Baseline 圖片
+          <img src="simpleandMedium.png" width="100%" height="100%">
+        </td></tr>
+        <tr>
+          <td> Strong Baseline 圖片
+          <table>
+            <tbody><tr>
+              <td><img src="3D.png" width="750px"></td>
+              <td><img src="a.png" width="750px"></td>
+              <td><img src="clipping.png" width="750px"></td>
+            </tr>
+          </tbody></table>
+        </td></tr>
+      </tbody></table>
     </div>
   </div>
 
@@ -250,5 +267,8 @@
   }
 </script>
 
-</body>
+
+
+</div></body>
+
 </html>
